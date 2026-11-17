@@ -1,16 +1,44 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.practica3ed;
 
-/**
- *
- * @author 0000
- */
-public class Practica3ed {
+import java.util.Scanner;
 
+public class Practica3ed {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner sc = new Scanner(System.in);
+        int opcion = 0;
+
+        while (opcion != 5) {
+            System.out.println("=== CALCULADORA ===");
+            System.out.println("1. Sumar");
+            System.out.println("2. Restar");
+            System.out.println("3. Multiplicar");
+            System.out.println("4. Dividir");
+            System.out.println("5. Salir");
+            System.out.print("Elige una opcion: ");
+
+            try {
+                opcion = Integer.parseInt(sc.nextLine());
+
+                if (opcion >= 1 && opcion <= 4) {
+                    System.out.print("Primer numero: ");
+                    double a = Double.parseDouble(sc.nextLine());
+                    System.out.print("Segundo numero: ");
+                    double b = Double.parseDouble(sc.nextLine());
+
+                    if (opcion == 1) {
+                        System.out.println("Resultado: " + (a + b));
+                    }
+                    // RESTAR
+                    // MULTIPLICAR
+                    // DIVIDIR
+                } else if (opcion == 5) {
+                    System.out.println("Adios");
+                } else {
+                    System.out.println("Opcion no valida");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Entrada no valida");
+            }
+        }
     }
 }
