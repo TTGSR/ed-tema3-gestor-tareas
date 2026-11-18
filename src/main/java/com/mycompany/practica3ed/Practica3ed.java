@@ -8,7 +8,7 @@ public class Practica3ed {
         int opcion = 0;
 
         while (opcion != 5) {
-            System.out.println("=== Mi CALCULADORA ===");
+            System.out.println("=== CALCULADORA DE ILYA ===");
             System.out.println("1. Sumar");
             System.out.println("2. Restar");
             System.out.println("3. Multiplicar");
