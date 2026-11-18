@@ -34,7 +34,13 @@ public class Practica3ed {
                     if (opcion == 3) {
                         System.out.println("Resultado: " + (a * b));
                     }
-                    // DIVIDIR
+                    if (opcion == 4) {
+                        if (b == 0) {
+                            System.out.println("No se puede dividir entre 0");
+                        } else {
+                            System.out.println("Resultado: " + (a / b));
+                        }
+                    }
                 } else if (opcion == 5) {
                     System.out.println("Adios");
                 } else {
