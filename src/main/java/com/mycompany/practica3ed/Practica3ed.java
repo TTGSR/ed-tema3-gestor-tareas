@@ -28,7 +28,9 @@ public class Practica3ed {
                     if (opcion == 1) {
                         System.out.println("Resultado: " + (a + b));
                     }
-                    // RESTAR
+                    if (opcion == 2) {
+                        System.out.println("Resultado: " + (a - b));
+                    }
                     // MULTIPLICAR
                     // DIVIDIR
                 } else if (opcion == 5) {
