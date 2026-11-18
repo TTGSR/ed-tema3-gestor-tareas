@@ -31,7 +31,9 @@ public class Practica3ed {
                     if (opcion == 2) {
                         System.out.println("Resultado: " + (a - b));
                     }
-                    // MULTIPLICAR
+                    if (opcion == 3) {
+                        System.out.println("Resultado: " + (a * b));
+                    }
                     // DIVIDIR
                 } else if (opcion == 5) {
                     System.out.println("Adios");
@@ -43,4 +45,4 @@ public class Practica3ed {
             }
         }
     }
-}
+}3
